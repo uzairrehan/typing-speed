@@ -1,17 +1,15 @@
-/* Reset and Fonts */
 body {
   margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #c084fc, #8b5cf6, #6d28d9);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
   background-attachment: fixed;
   color: #333;
 }
 
-/* Main Container */
 .main-body {
   background: #fff;
   border-radius: 20px;
@@ -20,26 +18,25 @@ body {
   text-align: center;
   width: 90%;
   max-width: 600px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-/* Heading */
 h2 {
   font-size: 2.5rem;
-  color: #4c1d95;
+  color: #d97706;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
-/* Sentence Display */
 #showSentence {
   font-size: 1.5rem;
-  color: #555;
+  color: #333;
   margin: 2rem 0;
   letter-spacing: 0.5px;
   line-height: 1.6;
 }
 
-/* Typing Section */
 .typing_section {
   display: flex;
   flex-direction: column;
@@ -47,20 +44,19 @@ h2 {
 }
 
 #textarea {
-  border: 2px solid #d8b4fe;
-  border-radius: 12px;
+  border: 2px solid #f59e0b;
   padding: 1rem 1.5rem;
   font-size: 1rem;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #fff7e6;
   resize: none;
   outline: none;
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 #textarea:focus {
-  border-color: #7c3aed;
-  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.2);
+  border-color: #fbbf24;
+  box-shadow: 0 4px 8px rgba(251, 191, 36, 0.2);
   background-color: #fff;
 }
 
@@ -72,13 +68,13 @@ h2 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 #btn:hover {
-  background: linear-gradient(135deg, #6d28d9, #4c1d95);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -88,10 +84,9 @@ h2 {
   box-shadow: none;
 }
 
-/* Score Display */
 #score {
   font-size: 1.4rem;
   margin-top: 2rem;
   font-weight: 500;
-  color: #374151;
+  color: #333;
 }

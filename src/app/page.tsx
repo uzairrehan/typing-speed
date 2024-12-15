@@ -25,8 +25,9 @@ function Home() {
   }, [isTyping]);
 
   const startTest = () => {
-    const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-    
+    const randomSentence =
+      sentences[Math.floor(Math.random() * sentences.length)];
+
     setCurrentSentence(randomSentence);
     setIsTyping(true);
     setStartTime(Date.now());
@@ -35,11 +36,15 @@ function Home() {
   };
 
   const endTest = () => {
-    const timeTaken = (Date.now() - startTime) / 1000; 
+    const timeTaken = (Date.now() - startTime) / 1000;
     const wordsTyped = userText.trim().split(" ").length;
     const speed = Math.round((wordsTyped / timeTaken) * 60);
 
-    setScore(`You typed at ${speed} WPM. Words: ${wordsTyped}, Time: ${timeTaken.toFixed(2)}s`);
+    setScore(
+      `You typed at ${speed} WPM. Words: ${wordsTyped}, Time: ${timeTaken.toFixed(
+        2
+      )}s`
+    );
     setIsTyping(false);
     setCurrentSentence("");
   };

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Typing Speed",
+  title: "Typing Speed by Uzair",
   description: "this is typing speed test app made in react",
 };
 
