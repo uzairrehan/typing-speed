@@ -1,84 +1,86 @@
-
+/* Reset and Fonts */
 body {
+  margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #c084fc, #8b5cf6, #6d28d9);
   background-attachment: fixed;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
+/* Main Container */
 .main-body {
-  background: linear-gradient(135deg, #ffffff, #f3f4f6);
-  padding: 3rem 4rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-align: center;
-  max-width: 60rem;
   width: 90%;
+  max-width: 600px;
 }
 
+/* Heading */
 h2 {
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 2.5rem;
   color: #4c1d95;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
+/* Sentence Display */
 #showSentence {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  color: #555;
   margin: 2rem 0;
-  letter-spacing: 0.02rem;
-  color: #374151;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
 }
 
+/* Typing Section */
 .typing_section {
-  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #textarea {
-  border: 0.2rem solid #8b5cf6;
-  border-radius: 1rem;
-  max-width: 100%;
-  width: 100%;
-  height: 15rem;
-  padding: 1.2rem 2rem;
-  font-size: 1.6rem;
-  color: #1f2937;
-  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #d8b4fe;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
   resize: none;
   outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 #textarea:focus {
   border-color: #7c3aed;
-  background: #fdfdfd;
-  box-shadow: 0 0.5rem 1.5rem rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.2);
+  background-color: #fff;
 }
 
+/* Button */
 #btn {
-  display: inline-block;
-  padding: 1rem 3rem;
+  padding: 0.8rem 2rem;
   border: none;
-  border-radius: 1rem;
-  background-color: #7c3aed;
-  color: #fff;
-  font-size: 1.8rem;
-  margin-top: 1.6rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: capitalize;
 }
 
 #btn:hover {
-  background-color: #6b21a8;
-  transform: translateY(-3px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #6d28d9, #4c1d95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 #btn:active {
@@ -86,9 +88,10 @@ h2 {
   box-shadow: none;
 }
 
+/* Score Display */
 #score {
-  font-size: 1.8rem;
-  margin: 2rem 0;
-  letter-spacing: 0.02rem;
-  color: #333;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #374151;
 }
