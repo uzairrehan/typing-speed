@@ -60,7 +60,7 @@ function Home() {
           disabled={!isTyping}
           value={userText}
           onChange={(e) => setUserText(e.target.value)}
-          placeholder="Type what is writen on top ☝️ !"
+          placeholder="Type what will be written on top ☝️ !"
         ></textarea>
         <button id="btn" onClick={isTyping ? endTest : startTest}>
           {isTyping ? "Done" : "Start"}
