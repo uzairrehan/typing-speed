@@ -5,6 +5,8 @@
 This is a simple yet engaging **Typing Speed Test app** built using **React⚛️** and **Next.js**. It lets you measure your typing speed, practice accuracy, and have fun while doing so! 🚀  
 
 ---
+<img src="./public/picture.png" />
+---
 
 ### ✨ Features  
 - 🎲 Random sentence generation for typing practice  
